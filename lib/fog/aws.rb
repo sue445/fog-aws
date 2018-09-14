@@ -5,10 +5,6 @@ require 'fog/json'
 require File.expand_path('../aws/version', __FILE__)
 
 module Fog
-  module DNS
-    autoload :AWS, File.expand_path('../aws/dns', __FILE__)
-  end
-
   module Storage
     autoload :AWS, File.expand_path('../aws/storage', __FILE__)
   end
@@ -29,6 +25,7 @@ module Fog
     autoload :CloudWatch,       File.expand_path('../aws/cloud_watch', __FILE__)
     autoload :Compute,          File.expand_path('../aws/compute', __FILE__)
     autoload :DataPipeline,     File.expand_path('../aws/data_pipeline', __FILE__)
+    autoload :DNS,              File.expand_path('../aws/dns', __FILE__)
     autoload :DynamoDB,         File.expand_path('../aws/dynamodb', __FILE__)
     autoload :ECS,              File.expand_path('../aws/ecs', __FILE__)
     autoload :EFS,              File.expand_path('../aws/efs', __FILE__)
