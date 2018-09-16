@@ -36,16 +36,16 @@ matrix:
     gemfile: gemfiles/Gemfile-edge
 notifications:
   email: false
-  irc:
-    channels:
-    - irc.freenode.org#ruby-fog
-    template:
-    - "[#%{build_number}] %{message} %{build_url}"
-    - "[#%{build_number}] %{commit} on %{branch} by %{author}"
-    - "[#%{build_number}] %{compare_url}"
-    on_success: always
-    on_failure: always
-    use_notice: false
+#  irc:
+#    channels:
+#    - irc.freenode.org#ruby-fog
+#    template:
+#    - "[#%{build_number}] %{message} %{build_url}"
+#    - "[#%{build_number}] %{commit} on %{branch} by %{author}"
+#    - "[#%{build_number}] %{compare_url}"
+#    on_success: always
+#    on_failure: always
+#    use_notice: false
 before_install:
   - gem update bundler
 env:
